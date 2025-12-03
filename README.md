@@ -16,3 +16,15 @@ The simulation relies on base R and the `dplyr` package for data aggregation.
 To install dependencies, run:
 ```R
 install.packages("dplyr")
+```
+
+## User Guide: How to Reproduce Results
+### Step 1: File Setup
+
+Ensure that `main.R` is in your current working directory. You can check your working directory in R using `getwd()` and set it using `setwd("/path/to/your/folder")`.
+
+### Step 2: Full Experiment (Replicate Paper) To reproduce the full results presented in the project report:
+* Open `main.R`.
+* Scroll to Section 5 (Main Execution Block) at the bottom of the script.
+* Modify the `exp_config` to the values you like.
+* Run the script. Note: This may take 15–30 minutes depending on your hardware.
