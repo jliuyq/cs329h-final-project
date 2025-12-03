@@ -318,7 +318,7 @@ if (sys.nframe() == 0) {
   set.seed(123)
   
   # Configure Experiment
-  # NOTE: Reduced n_rep for quick testing. Increase for final paper.
+  # NOTE: Reduced n_rep for quick testing. Increase for full result.
   exp_config <- list(
     n_vec      = c(20, 40, 80),        # number of items     
     design_vec = c("iid", "clustered"),     # two different types of generation
@@ -353,4 +353,5 @@ if (sys.nframe() == 0) {
   output_file <- "bt_cat_summary_metrics.csv"
   write.csv(summary_metrics, output_file, row.names = FALSE)
   message(paste("Results saved to:", output_file))
+
 }
