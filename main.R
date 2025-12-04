@@ -338,7 +338,7 @@ if (sys.nframe() == 0) {
   
   # Summary
   summary_metrics <- results$metrics %>%
-    group_by(design, n_items, mult, T_final=T, policy) %>%
+    group_by(design, n_items, mult, policy) %>%
     summarise(
       n_rep = n(),
       across(c(kendall, spearman, rmse, top4_acc, top8_acc),
@@ -355,3 +355,4 @@ if (sys.nframe() == 0) {
   message(paste("Results saved to:", output_file))
 
 }
+
